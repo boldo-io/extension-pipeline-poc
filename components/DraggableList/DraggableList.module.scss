@@ -1,0 +1,14 @@
+.listContainer {
+  user-select: none;
+  .listItem {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    .itemBody {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
