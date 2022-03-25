@@ -1,0 +1,31 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sucessBadge {
+    border: 1rem solid lime;
+    border-radius: 50%;
+    color: lime;
+    & > svg {
+      animation-name: breath;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      margin: 2rem;
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @keyframes breath {
+    0% {
+      margin: 2rem;
+      width: 200px;
+      height: 200px
+    }
+    50% {
+      margin: 3rem;
+      width: 250px;
+      height: 250px
+    }
+  }
+}
